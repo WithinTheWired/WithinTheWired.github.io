@@ -200,7 +200,7 @@ h1 {
 }
 
 .home-inner {
-	background-image: url('img/back2.png');
+	background-image: url('img/back.png');
 	background-size:cover;
 	padding-bottom: 2rem;
 }
@@ -507,7 +507,7 @@ h1 {
 /*=========== MOCKUP INFO SECTION =========*/
 
 .ipad-info {
-	background-image: url("img/mockup1.png");
+	background-image: url("img/mockup1.jpg");
 	background-size: cover;
 	background-position: center;
 	display: flex;
