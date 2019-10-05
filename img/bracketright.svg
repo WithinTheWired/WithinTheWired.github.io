@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="629px" viewBox="0 0 111 629" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="About" transform="translate(-1213.000000, -88.000000)" fill-rule="nonzero" stroke="#FFFFFF">
+            <g id="Group-Copy" transform="translate(1269.000000, 403.000000) scale(-1, 1) translate(-1269.000000, -403.000000) translate(1221.000000, 97.000000)">
+                <path d="M95.5,0.25 L2.5,0.25" id="Line" stroke-width="16.5"></path>
+                <path d="M95.5,611.25 L2.5,611.25" id="Line-Copy" stroke-width="16.5"></path>
+                <path d="M2,0 L1.5,611.5" id="Line-2" stroke-width="16"></path>
+            </g>
+        </g>
+    </g>
+</svg>
