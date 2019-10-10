@@ -1,0 +1,863 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background: white;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 1em;
+  text-transform: uppercase;
+  border: none;
+  transition-property: box-shadow, transform;
+  transition-duration: 0.3s;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Futura", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0 auto;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  max-width: 1200px;
+  overflow-x: hidden;
+  transition: width 0.3s;
+  justify-content: space-between;
+}
+.sidenav h4 {
+  color: white;
+}
+.sidenav .search {
+  width: 100%;
+  padding: 1.5em 2em;
+  border-radius: 6px;
+  margin-bottom: 1em !important;
+  background: #292929;
+  font-size: 0.3em;
+  font-family: system-ui;
+  letter-spacing: 0.1em;
+  color: #3DE39B;
+  border: 1px solid #A4A4A4;
+}
+.sidenav a {
+  padding: 0.5em;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav .nav-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidenav .nav-cont .nav-flex {
+  display: flex;
+}
+.sidenav .nav-cont .nav-flex a:hover {
+  color: #3dd8e3;
+  transition: 0.3s;
+}
+.sidenav .nav-cont .search {
+  height: 2em;
+}
+
+@media screen and (min-width: 0px) {
+  .bar {
+    color: white;
+    padding-left: 0.5em;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0 auto;
+    position: fixed;
+    width: 0;
+    z-index: 1;
+    display: relative;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: width 0.3s;
+    padding-top: 60px;
+  }
+  .sidenav .search {
+    padding: 1em;
+    margin: 0 0 0 0.6em;
+    font-size: 1.2em;
+    width: 90%;
+  }
+  .sidenav h4 {
+    color: white;
+  }
+  .sidenav a {
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav .nav-cont {
+    display: inherit;
+  }
+  .sidenav .nav-cont .nav-flex {
+    display: inherit;
+  }
+  .sidenav .nav-cont .search {
+    height: 2em;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+main {
+  background: black;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main .hero {
+  width: 100%;
+  height: 92vh;
+  background-image: linear-gradient(90deg, #3dd8e3 0%, rgba(58, 205, 217, 0.5368522409) 56%, #133d59 100%, rgba(2, 0, 36, 0.912202381) 100%), url(img/dance.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center right;
+  max-height: 700px;
+  position: relative;
+}
+main .hero .hero-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 0.5em;
+  color: green;
+  max-width: 900px;
+  margin: 3em auto;
+  font-size: 2.7em;
+  line-height: 1.2em;
+  color: black;
+  text-transform: uppercase;
+}
+main .hero .hero-title button {
+  padding: 1.2em 2.2em;
+  margin-top: 1.5em;
+  border: none;
+  background: white;
+  font-size: 14px;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+main .hero .hero-title .pop {
+  margin-left: 0.5em;
+}
+main .attr-title {
+  padding: 0.5em 0 0.5em 1em;
+  margin: 0;
+  color: white;
+}
+main .info {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+main .attr-box {
+  color: black;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+main .attr-box .attr-items {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2em;
+  background: white;
+  justify-content: space-around;
+}
+main .attr-box .attr-items .attr-act div {
+  background-size: cover;
+  background-position: center;
+  margin: 1.2em auto;
+  width: 90%;
+  height: 13em;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+main .attr-box .attr-items .attr-act p {
+  padding: 1em;
+}
+main .attr-box .attr-items .attr-bowl {
+  background-image: url(img/bowl.jpeg);
+}
+main .attr-box .attr-items .attr-laser {
+  background-image: url(img/laser.jpg);
+}
+main .attr-box .attr-items .attr-arcade {
+  background-image: url(img/arcade.jpeg);
+}
+main .attr-box .attr-items .attr-concert {
+  background-image: url(img/concert.jpeg);
+}
+main .attr-box .attr-items h3 {
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+main .attr-box .attr-items hr {
+  background: #3dd8e3;
+  margin: 0.8em auto;
+  width: 12em;
+  height: 1px;
+}
+main .attr-box .attr-items div {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 530px) {
+  main .attr-act {
+    width: 50% !important;
+  }
+}
+@media (min-width: 1000px) {
+  main .attr-act {
+    width: 25% !important;
+  }
+}
+main .day-pass {
+  display: flex;
+  flex-direction: column;
+}
+main .day-pass .pass-img {
+  background-image: url(img/girl.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 70%;
+}
+main .day-pass .pass-info {
+  letter-spacing: -1px;
+  font-size: 1em;
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+  padding: 2em;
+  text-align: left;
+}
+main .day-pass .pass-info h2 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+main .day-pass .pass-info li {
+  padding: 0.5em;
+}
+main .book-now {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 0%, rgba(0, 0, 0, 0.4336283186) 100%), url("img/balloon.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 16px solid #3dd8e3;
+  font-size: 1em;
+  color: #3dd8e3;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+main .book-now h1 {
+  margin: 0;
+  padding: 0 0 0.5em;
+  color: #3dd8e3;
+}
+main .book-now button {
+  background: #3dd8e3;
+  border: none;
+  padding: 1em;
+  margin: 0 4em;
+  border-radius: 1em;
+}
+main .happy-hour .happy-cont {
+  height: 302px;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4336283186) 100%), url("img/bar.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3em;
+  color: white;
+}
+main .happy-hour .happy-cont .dr {
+  position: relative;
+  top: 30px;
+  right: 50px;
+}
+main .happy-hour .happy-cont .away {
+  padding-bottom: 0.4em;
+  position: relative;
+  left: 35px;
+}
+main .happy-hour .happy-info {
+  padding: 2em;
+  text-align: center;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+main .happy-hour .happy-info h2 {
+  padding-bottom: 0.5em;
+}
+main .happy-hour h3 {
+  padding: 0.4em 0;
+}
+main .food {
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+  text-align: center;
+}
+main .food .food-img {
+  padding-top: 40%;
+  background-image: url("img/pizza.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .food h2 {
+  padding: 1em 1em 0em 1em;
+}
+main .food button {
+  margin-bottom: 1.3em;
+}
+
+footer {
+  max-width: 1440px;
+  color: white;
+  background: #2e2e2e;
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+footer .foot-wrap {
+  display: flex;
+  flex-direction: column;
+}
+footer .foot-map {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .foot-map .foot-hour {
+  width: 100%;
+  margin-top: 1.2em;
+  font-size: 1.1em;
+  padding: 1em;
+}
+footer .foot-map .maps {
+  max-width: 800px;
+  width: 100%;
+}
+footer .foot-map .newsletter {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 1em;
+}
+footer .foot-map .newsletter button {
+  padding: 1em 1em;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+footer .foot-map .newsletter .form-group input {
+  margin-top: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 1em;
+  border-style: none;
+}
+footer .contact {
+  padding: 0 2em 2em 2em;
+}
+footer .locate {
+  background: black;
+}
+footer .locate .hours {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 2em;
+}
+footer .locate .hours li {
+  padding: 0.5em 0;
+}
+footer .locate .addr {
+  padding: 1em 1em 1em 1em;
+  color: color;
+}
+footer .locate .addr .phone {
+  color: color;
+}
+footer .foot-logo {
+  background: black;
+  padding: 2em;
+  background-size: cover;
+  color: white;
+}
+
+@media only screen and (min-width: 589px) {
+  main .day-pass {
+    flex-direction: row;
+    overflow: hidden;
+    font-size: 1.4em;
+  }
+  main .day-pass .pass-img {
+    padding-top: 20%;
+    width: 40%;
+  }
+  main .day-pass .pass-info {
+    width: 60%;
+  }
+  main .book-now {
+    padding: 3em;
+  }
+  main .book-now button {
+    margin: 0 10em;
+  }
+}
+@media only screen and (min-width: 724px) {
+  header .sidenav {
+    display: flex;
+    max-width: 1200px;
+    width: inherit !important;
+    overflow: inherit;
+    position: static;
+    padding: 1em;
+    margin: 0 auto;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+  }
+  header .sidenav .closebtn {
+    display: none;
+  }
+  header .bar {
+    display: none;
+    margin-left: 0.5em;
+  }
+
+  main .happy-hour {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .happy-hour .happy-cont {
+    width: 40%;
+    height: 16em;
+  }
+  main .happy-hour .happy-info {
+    width: 60%;
+    padding-top: 3.5em;
+    font-size: 1.4em;
+  }
+  main .book-now {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    order: 15px solid #3dd8e3;
+    font-size: 1.4em;
+  }
+  main .book-now button {
+    margin: 0 1em;
+  }
+  main .book-now h1 {
+    padding-left: 0.5em;
+  }
+  main .food {
+    font-size: 1em;
+  }
+  main .food .food-info {
+    margin-top: 2.2em;
+    padding: 0 1em;
+    line-height: 3em;
+    margin-bottom: 2em;
+  }
+  main .food .food-img {
+    padding-top: 50%;
+  }
+  main .ads {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  footer .foot-map .maps {
+    margin-top: 3em;
+    width: 80%;
+    margin-bottom: 1.5em;
+  }
+  footer .foot-map .foot-hour {
+    width: 40%;
+  }
+  footer .foot-map .newsletter {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+
+  .hero-title {
+    font-size: 4.3em !important;
+  }
+
+  .search {
+    font-size: 1.7em !important;
+  }
+
+  .attr-items {
+    font-size: 1.4em;
+  }
+
+  main .day-pass .pass-info ul {
+    font-size: 1.3em;
+  }
+  main .food-info h2 {
+    font-size: 2em;
+    padding: 0 1em;
+    margin: 0;
+  }
+  main .food-info button {
+    font-size: 1.4em;
+  }
+  main .book-now {
+    font-size: 1.6em;
+    padding-bottom: 2em;
+  }
+  main .book-now h1 {
+    padding-left: 0.7em;
+    margin-bottom: 1em;
+    line-height: 2em;
+  }
+  main .book-now button {
+    margin: 0 auto;
+    max-width: 20em;
+    padding: 1em 1.5em;
+  }
+  main .happy-hour .happy-info {
+    padding-top: 5.5em;
+  }
+  main .happy-hour .happy-cont .dr {
+    left: -30px;
+    top: 20px;
+    font-size: 2.5em;
+  }
+  main .happy-hour .happy-cont .away {
+    font-size: 2.5em;
+  }
+
+  footer .foot-map .maps {
+    width: 40%;
+    margin-bottom: 3em;
+  }
+  footer .foot-map .foot-hour {
+    width: 20%;
+  }
+  footer .foot-map .newsletter {
+    margin-top: 1em;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-attachment: unset !important;
+  }
+
+  .happy-cont {
+    background-attachment: unset !important;
+  }
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+*:before,
+*:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+img {
+    page-break-inside: avoid;
+  }
+
+  p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
