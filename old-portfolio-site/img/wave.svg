@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="229px" viewBox="0 0 1200 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#00F2FE" offset="0%"></stop>
+            <stop stop-color="#4FACFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.443136161">
+        <g id="Hunter---Standard-Web" transform="translate(0.000000, -333.000000)" fill="url(#linearGradient-1)">
+            <g id="her-content" transform="translate(-21.000000, 0.000000)">
+                <path d="M0,332 C91.7399065,337.003984 157.645475,373.011522 197.716705,440.022614 C237.787935,507.033707 300.217722,527.176503 385.006066,500.451002 C462.171477,454.379114 524.461236,445.534044 571.875341,473.915793 C642.9965,516.488417 813.20044,541.681008 906.223623,521.066005 C999.246807,500.451002 1007.78664,374.115087 1092.60376,402.15444 C1177.42087,430.193794 1134.48001,472.30888 1215.49334,402.15444 C1269.50222,355.384813 1269.50222,408.666667 1215.49334,562 L8.04493723,562 L0,332 Z" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
